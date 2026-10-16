@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DB PLAY - Series</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="icon" type="image/png" href="../../PHOTOS/logo.png" />
+</head>
+
+<body>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <header class="glass-header">
+    <div class="nav-left">
+      <a href="#" class="logo-container">
+        <img src="../../PHOTOS/LOGO.png" alt="DB PLAY Logo" class="site-logo" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="../../homepage.html">HOME</a></li>
+        <li><a href="../../movies_or_series.html" class="active-pill">Movie/Series</a></li>
+        <li><a href="../../watchlist.html">My Watchlist</a></li>
+        <li><a href="../../about.html">About</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search movies, series..." class="glass-input" />
+        <i class="fa-solid fa-magnifying-glass search-icon" id="searchIcon"></i>
+      </div>
+
+      <div class="profile-menu-container">
+        <img src="../../PHOTOS/PROFILE-AVATAR.png" alt="User Profile" class="profile-avatar" id="profileAvatar" />
+
+        <div class="profile-dropdown" id="profileDropdown">
+          <a href="#">
+            <i class="fa-regular fa-circle-user"></i>
+            <span>Account & Settings</span>
+          </a>
+
+          <a href="#">
+            <i class="fa-solid fa-tv"></i>
+            <span>Activate TV</span>
+          </a>
+
+          <a href="#">
+            <i class="fa-regular fa-circle-question"></i>
+            <span>Help & FAQs</span>
+          </a>
+
+          <a href="../../index.html" id="signOutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Sign Out</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  </header>
+
+  <!-- MAIN CATALOG -->
+  <main class="catalog-page">
+
+    <!-- PAGE HEADING -->
+    <section class="catalog-heading">
+      <div>
+        <p class="catalog-eyebrow">
+          DISCOVER YOUR NEXT FAVORITE
+        </p>
+
+        <h1>Series</h1>
+
+        <p class="catalog-subtitle">
+          Explore series featuring DonBelle.
+        </p>
+      </div>
+    </section>
+
+    <!-- CATEGORY FILTERS -->
+    <section class="catalog-filters">
+
+      <a href="../../movies_or_series.html" class="filter-btn">
+        All
+      </a>
+
+      <a href="movies.html" class="filter-btn">
+        Movies
+      </a>
+
+      <a href="series.html" class="filter-btn active" aria-current="page">
+        Series
+      </a>
+
+      <a href="belle.html" class="filter-btn">
+        Belle Mariano
+      </a>
+
+      <a href="donny.html" class="filter-btn">
+        Donny Pangilinan
+      </a>
+
+    </section>
+
+    <!-- SERIES -->
+    <section class="catalog-section" data-section="series">
+
+      <div class="category-heading">
+        <h2>DonBelle Series</h2>
+        <span>Featured films</span>
+      </div>
+
+      <div class="poster-grid">
+
+        <!-- HOW TO SPOT A RED FLAG -->
+        <article class="poster-card" data-category="series" data-title="How to Spot a Red Flag" data-year="2024"
+          data-genre="Romance, Comedy"
+          data-description="A romantic comedy about relationships, unexpected encounters, and recognizing warning signs.">
+
+          <div class="poster-image">
+            <img src="../../MS%20PHOTOS/HTSARF.png" alt="How to Spot a Red Flag Poster">
+
+            <div class="poster-overlay">
+              <span class="poster-play">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span>View Details</span>
+            </div>
+          </div>
+
+          <div class="poster-info">
+            <h3>How to Spot a Red Flag</h3>
+            <p>2024 <span>•</span> Romance</p>
+          </div>
+        </article>
+
+        <!-- CAN'T BUY ME LOVE -->
+        <article class="poster-card" data-category="series" data-title="Can't Buy Me Love" data-year="2023"
+          data-genre="Romance, Comedy, Drama"
+          data-description="Caroline, a wealthy young woman, crosses paths with Bingo, a hardworking man from a very different background. Their lives become connected as they deal with family problems and complicated relationships.">
+
+          <div class="poster-image">
+            <img src="../../MS%20PHOTOS/CBML.png" alt="Can't Buy Me Love Poster">
+
+            <div class="poster-overlay">
+              <span class="poster-play">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span>View Details</span>
+            </div>
+          </div>
+
+          <div class="poster-info">
+            <h3>Can't Buy Me Love</h3>
+            <p>2023 <span>•</span> Romance</p>
+          </div>
+        </article>
+
+        <!-- HE'S INTO HER SEASON 2 -->
+        <article class="poster-card" data-category="series" data-title="He's Into Her Season 2" data-year="2022"
+          data-genre="Teen Romance, Comedy, Drama"
+          data-description="Maxpein and Deib continue their relationship while facing new challenges involving their families, friendships, and future together.">
+
+          <div class="poster-image">
+            <img src="../../MS%20PHOTOS/HIH-S2.png" alt="He's Into Her Season 2 Poster">
+
+            <div class="poster-overlay">
+              <span class="poster-play">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span>View Details</span>
+            </div>
+          </div>
+
+          <div class="poster-info">
+            <h3>He's Into Her Season 2</h3>
+            <p>2022 <span>•</span> Teen Romance</p>
+          </div>
+        </article>
+
+        <!-- HE'S INTO HER SEASON 1 -->
+        <article class="poster-card" data-category="series" data-title="He's Into Her Season 1" data-year="2021"
+          data-genre="Teen Romance, Comedy, Drama"
+          data-description="Maxpein moves to Manila to live with her father and attends a new school, where she meets Deib Enrile. Their relationship develops amid school rivalries, friendships, and family challenges.">
+
+          <div class="poster-image">
+            <img src="../../MS%20PHOTOS/HIH-S1.png" alt="He's Into Her Season 1 Poster">
+
+            <div class="poster-overlay">
+              <span class="poster-play">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span>View Details</span>
+            </div>
+          </div>
+
+          <div class="poster-info">
+            <h3>He's Into Her Season 1</h3>
+            <p>2021 <span>•</span> Teen Romance</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <footer class="glass-footer">
+
+      <img src="../../PHOTOS/LOGOFOOTER.png" alt="DB PLAY Logo" class="footer-logo">
+
+      <div class="footer-version">
+        Version: 26.09.03-1
+      </div>
+
+      <div class="footer-links">
+        <a href="#">Help and Support</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <div class="copyright">
+        Copyright © 2026 DB Play | All Rights Reserved.
+      </div>
+
+    </footer>
+
+  </main>
+
+  </main>
+
+  <!-- DETAILS MODAL -->
+  <div class="catalog-modal" id="detailsModal">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="closeDetails" aria-label="Close details">
+        &times;
+      </button>
+
+      <p class="modal-eyebrow">DB PLAY • DETAILS</p>
+      <h2 id="modalTitle">Movie Title</h2>
+      <p id="modalMeta" class="modal-meta"></p>
+      <p id="modalDescription" class="modal-description"></p>
+
+      <button type="button" class="modal-action" id="modalWatchlist">
+        <i class="fa-solid fa-plus"></i>
+        Add to Watchlist
+      </button>
+    </div>
+  </div>
+
+  <script src="../../Main.js"></script>
+
+</body>
+
+</html>

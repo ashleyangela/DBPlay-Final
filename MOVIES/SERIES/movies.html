@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DB PLAY - Movies</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="icon" type="image/png" href="../../PHOTOS/logo.png" />
+</head>
+
+<body>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <header class="glass-header">
+    <div class="nav-left">
+      <a href="#" class="logo-container">
+        <img src="../../PHOTOS/LOGO.png" alt="DB PLAY Logo" class="site-logo" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="../../homepage.html">HOME</a></li>
+        <li><a href="../../movies_or_series.html" class="active-pill">Movie/Series</a></li>
+        <li><a href="../../watchlist.html">My Watchlist</a></li>
+        <li><a href="../../about.html">About</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search movies, series..." class="glass-input" />
+        <i class="fa-solid fa-magnifying-glass search-icon" id="searchIcon"></i>
+      </div>
+
+      <div class="profile-menu-container">
+        <img src="../../PHOTOS/PROFILE-AVATAR.png" alt="User Profile" class="profile-avatar" id="profileAvatar" />
+
+        <div class="profile-dropdown" id="profileDropdown">
+          <a href="#">
+            <i class="fa-regular fa-circle-user"></i>
+            <span>Account & Settings</span>
+          </a>
+
+          <a href="#">
+            <i class="fa-solid fa-tv"></i>
+            <span>Activate TV</span>
+          </a>
+
+          <a href="#">
+            <i class="fa-regular fa-circle-question"></i>
+            <span>Help & FAQs</span>
+          </a>
+
+          <a href="../../index.html" id="signOutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Sign Out</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CATALOG -->
+  <main class="catalog-page">
+    <!-- PAGE HEADING -->
+    <section class="catalog-heading">
+      <div>
+        <p class="catalog-eyebrow">DISCOVER YOUR NEXT FAVORITE</p>
+
+        <h1>Movies</h1>
+
+        <p class="catalog-subtitle">Explore movies featuring Donbelle.</p>
+      </div>
+    </section>
+
+    <!-- CATEGORY FILTERS -->
+    <section class="catalog-filters">
+      <a href="../../movies_or_series.html" class="filter-btn"> All </a>
+
+      <a href="movies.html" class="filter-btn active" aria-current="page">
+        Movies
+      </a>
+
+      <a href="series.html" class="filter-btn"> Series </a>
+
+      <a href="belle.html" class="filter-btn"> Belle Mariano </a>
+
+      <a href="donny.html" class="filter-btn"> Donny Pangilinan </a>
+    </section>
+
+    <!-- DONBELLE MOVIES -->
+    <section class="catalog-section" data-section="movie">
+      <div class="category-heading">
+        <h2>DonBelle Movies</h2>
+        <span>Featured films</span>
+      </div>
+
+      <div class="poster-grid">
+        <!-- TAYO SA WAKAS -->
+        <article class="poster-card" data-category="movie" data-title="Tayo Sa Wakas" data-year="2026"
+          data-genre="Romance, Drama"
+          data-description="Cisco and Cheska are a longtime couple whose dreams and ambitions slowly put them on different paths.">
+          <div class="poster-image">
+            <img src="../../MS%20PHOTOS/TSW.png" alt="Tayo Sa Wakas poster" />
+
+            <div class="poster-overlay">
+              <span class="poster-play">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span>View Details</span>
+            </div>
+          </div>
+
+          <div class="poster-info">
+            <h3>Tayo Sa Wakas</h3>
+            <p>2026 <span>•</span> Romance</p>
+          </div>
+        </article>
+
+        <!-- AN INCONVENIENT LOVE -->
+        <article class="poster-card" data-category="movie" data-title="An Inconvenient Love" data-year="2022"
+          data-genre="Romance, Comedy"
+          data-description="Two young people with different dreams make a deal that leads them to unexpected feelings.">
+          <div class="poster-image">
+            <img src="../../MS%20PHOTOS/AIL.png" alt="An Inconvenient Love poster" />
+
+            <div class="poster-overlay">
+              <span class="poster-play">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span>View Details</span>
+            </div>
+          </div>
+
+          <div class="poster-info">
+            <h3>An Inconvenient Love</h3>
+            <p>2022 <span>•</span> Romance</p>
+          </div>
+        </article>
+
+        <!-- LOVE IS COLOR BLIND -->
+        <article class="poster-card" data-category="movie" data-title="Love Is Color Blind" data-year="2021"
+          data-genre="Romance, Drama"
+          data-description="After an accident changes the way an artist sees the world, his longtime best friend tries to help him find happiness again.">
+          <div class="poster-image">
+            <img src="../../MS%20PHOTOS/LICB.png" alt="Love Is Color Blind poster" />
+
+            <div class="poster-overlay">
+              <span class="poster-play">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span>View Details</span>
+            </div>
+          </div>
+
+          <div class="poster-info">
+            <h3>Love Is Color Blind</h3>
+            <p>2021 <span>•</span> Romance</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- NO RESULTS MESSAGE -->
+    <p id="noResults" class="no-results" hidden>
+      No movies found. Try another search.
+    </p>
+  </main>
+
+  <!-- DETAILS MODAL -->
+  <div class="catalog-modal" id="detailsModal">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="closeDetails" aria-label="Close details">
+        &times;
+      </button>
+
+      <p class="modal-eyebrow">DB PLAY • DETAILS</p>
+
+      <h2 id="modalTitle">Movie Title</h2>
+
+      <p id="modalMeta" class="modal-meta"></p>
+
+      <p id="modalDescription" class="modal-description"></p>
+
+      <button type="button" class="modal-action" id="modalWatchlist">
+        <i class="fa-solid fa-plus"></i>
+        Add to Watchlist
+      </button>
+    </div>
+  </div>
+
+  <footer class="glass-footer">
+    <img src="../../PHOTOS/LOGOFOOTER.png" alt="DB PLAY Logo" class="footer-logo" />
+
+    <div class="footer-version">Version: 26.09.03-1</div>
+
+    <div class="footer-links">
+      <a href="#">Help and Support</a>
+      <a href="#">Terms and Conditions</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <div class="copyright">
+      Copyright © 2026 DB Play | All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- JavaScript from the project folder -->
+  <script src="../../Main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DB PLAY - Donny Pangilinan</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="icon" type="image/png" href="../../PHOTOS/logo.png" />
+</head>
+
+<body>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <header class="glass-header">
+    <div class="nav-left">
+      <a href="#" class="logo-container">
+        <img src="../../PHOTOS/LOGO.png" alt="DB PLAY Logo" class="site-logo" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="../../homepage.html">HOME</a></li>
+        <li><a href="../../movies_or_series.html" class="active-pill">Movie/Series</a></li>
+        <li><a href="../../watchlist.html">My Watchlist</a></li>
+        <li><a href="../../about.html">About</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search movies, series..." class="glass-input" />
+        <i class="fa-solid fa-magnifying-glass search-icon" id="searchIcon"></i>
+      </div>
+
+      <div class="profile-menu-container">
+        <img src="../../PHOTOS/PROFILE-AVATAR.png" alt="User Profile" class="profile-avatar" id="profileAvatar" />
+
+        <div class="profile-dropdown" id="profileDropdown">
+          <a href="#">
+            <i class="fa-regular fa-circle-user"></i>
+            <span>Account & Settings</span>
+          </a>
+
+          <a href="#">
+            <i class="fa-solid fa-tv"></i>
+            <span>Activate TV</span>
+          </a>
+
+          <a href="#">
+            <i class="fa-regular fa-circle-question"></i>
+            <span>Help & FAQs</span>
+          </a>
+
+          <a href="../../index.html" id="signOutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Sign Out</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CATALOG -->
+  <main class="catalog-page">
+    <!-- PAGE HEADING -->
+    <section class="catalog-heading">
+      <div>
+        <p class="catalog-eyebrow">DISCOVER YOUR NEXT FAVORITE</p>
+
+        <h1>Donny Pangilinan</h1>
+
+        <p class="catalog-subtitle">
+          Explore movies and series featuring Donny Pangilinan.
+        </p>
+      </div>
+    </section>
+
+    <!-- CATEGORY FILTERS -->
+    <section class="catalog-filters">
+      <a href="../../movies_or_series.html" class="filter-btn"> All </a>
+
+      <a href="movies.html" class="filter-btn"> Movies </a>
+
+      <a href="series.html" class="filter-btn"> Series </a>
+
+      <a href="belle.html" class="filter-btn"> Belle Mariano </a>
+
+      <a href="donny.html" class="filter-btn active" aria-current="page">
+        Donny Pangilinan
+      </a>
+    </section>
+
+    <!-- Donny MOVIES -->
+    <section class="catalog-section" data-section="drama">
+      <div class="category-heading">
+        <h2>Donny Pangilinan Movies</h2>
+      </div>
+
+      <div class="poster-grid">
+        <!-- ROJA -->
+        <article class="poster-card" data-category="series" data-title="Roja" data-year="2025"
+          data-genre="Drama, Thriller"
+          data-description="A Philippine television drama series featuring Donny Pangilinan as Liam Roja, alongside Kyle Echarri.">
+          <div class="poster-image">
+            <img src="../../MS%20PHOTOS/ROJA.png" alt="Roja Poster" />
+
+            <div class="poster-overlay">
+              <span class="poster-play">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span>View Details</span>
+            </div>
+          </div>
+
+          <div class="poster-info">
+            <h3>Roja</h3>
+            <p>2025 <span>•</span> Drama</p>
+          </div>
+        </article>
+
+        <!-- GG: GOOD GAME -->
+        <article class="poster-card" data-category="movie" data-title="GG: Good Game" data-year="2024"
+          data-genre="Teen, Drama, Sports"
+          data-description="Seth, an aspiring professional gamer, forms a competitive gaming team and pursues his dream of becoming an esports champion while facing challenges in his family and personal life.">
+          <div class="poster-image">
+            <img src="../../MS%20PHOTOS/GG.png" alt="GG Good Game Poster" />
+
+            <div class="poster-overlay">
+              <span class="poster-play">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span>View Details</span>
+            </div>
+          </div>
+
+          <div class="poster-info">
+            <h3>GG: Good Game</h3>
+            <p>2024 <span>•</span> Teen Drama</p>
+          </div>
+        </article>
+
+        <!-- JAMES, PAT AND DAVE -->
+        <article class="poster-card" data-category="movie" data-title="James, Pat and Dave" data-year="2020"
+          data-genre="Romance, Comedy, Drama"
+          data-description="Three friends navigate college life, friendships, and romantic relationships. Dave meets Trish, leading to an unexpected connection that changes their lives.">
+          <div class="poster-image">
+            <img src="../../MS%20PHOTOS/JPAD.png" alt="James, Pat and Dave Poster" />
+
+            <div class="poster-overlay">
+              <span class="poster-play">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span>View Details</span>
+            </div>
+          </div>
+
+          <div class="poster-info">
+            <h3>James, Pat and Dave</h3>
+            <p>2020 <span>•</span> Romance</p>
+          </div>
+        </article>
+
+        <!-- THE MALL, THE MERRIER -->
+        <article class="poster-card" data-category="movie" data-title="The Mall, The Merrier" data-year="2019"
+          data-genre="Comedy, Fantasy"
+          data-description="Estranged siblings Moira and Moises find themselves competing over their family's shopping mall, leading to a series of humorous and magical adventures.">
+          <div class="poster-image">
+            <img src="../../MS%20PHOTOS/TMTM.png" alt="The Mall The Merrier Poster" />
+
+            <div class="poster-overlay">
+              <span class="poster-play">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span>View Details</span>
+            </div>
+          </div>
+
+          <div class="poster-info">
+            <h3>The Mall, The Merrier</h3>
+            <p>2019 <span>•</span> Comedy</p>
+          </div>
+        </article>
+
+        <!-- WALWAL -->
+        <article class="poster-card" data-category="movie" data-title="Walwal" data-year="2018"
+          data-genre="Comedy, Drama"
+          data-description="A group of college friends faces the ups and downs of friendship, relationships, and growing up as they navigate their lives together.">
+          <div class="poster-image">
+            <img src="../../MS%20PHOTOS/WW.png" alt="Walwal Poster" />
+
+            <div class="poster-overlay">
+              <span class="poster-play">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span>View Details</span>
+            </div>
+          </div>
+
+          <div class="poster-info">
+            <h3>Walwal</h3>
+            <p>2018 <span>•</span> Comedy</p>
+          </div>
+        </article>
+
+        <!-- FANTASTICA -->
+        <article class="poster-card" data-category="movie" data-title="Fantastica" data-year="2018"
+          data-genre="Fantasy, Comedy"
+          data-description="Bellat tries to save her family's carnival from closing. With the help of her adopted brothers and other unexpected companions, she faces challenges to protect their home.">
+          <div class="poster-image">
+            <img src="../../MS%20PHOTOS/FANTASTICA.png" alt="Fantastica Poster" />
+
+            <div class="poster-overlay">
+              <span class="poster-play">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span>View Details</span>
+            </div>
+          </div>
+
+          <div class="poster-info">
+            <h3>Fantastica</h3>
+            <p>2018 <span>•</span> Fantasy</p>
+          </div>
+        </article>
+
+        <!-- PLAYHOUSE -->
+        <article class="poster-card" data-category="series" data-title="Playhouse" data-year="2018"
+          data-genre="Comedy, Romance, Family"
+          data-description="A Filipino television series about family, relationships, and unexpected connections. Belle Mariano makes a cameo appearance in the series.">
+          <div class="poster-image">
+            <img src="../../MS%20PHOTOS/PLAYHOUSE.png" alt="Playhouse Poster" />
+
+            <div class="poster-overlay">
+              <span class="poster-play">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span>View Details</span>
+            </div>
+          </div>
+
+          <div class="poster-info">
+            <h3>Playhouse</h3>
+            <p>2018 <span>•</span> Comedy</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- NO RESULTS MESSAGE -->
+    <p id="noResults" class="no-results" hidden>
+      No movies or series found. Try another search.
+    </p>
+  </main>
+
+  <!-- DETAILS MODAL -->
+  <div class="catalog-modal" id="detailsModal">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="closeDetails" aria-label="Close details">
+        &times;
+      </button>
+
+      <p class="modal-eyebrow">DB PLAY • DETAILS</p>
+      <h2 id="modalTitle">Movie Title</h2>
+      <p id="modalMeta" class="modal-meta"></p>
+      <p id="modalDescription" class="modal-description"></p>
+
+      <button type="button" class="modal-action" id="modalWatchlist">
+        <i class="fa-solid fa-plus"></i>
+        Add to Watchlist
+      </button>
+    </div>
+  </div>
+
+  <footer class="glass-footer">
+
+    <img src="../../PHOTOS/LOGOFOOTER.png" alt="DB PLAY Logo" class="footer-logo">
+
+    <div class="footer-version">
+      Version: 26.09.03-1
+    </div>
+
+    <div class="footer-links">
+      <a href="#">Help and Support</a>
+      <a href="#">Terms and Conditions</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <div class="copyright">
+      Copyright © 2026 DB Play | All Rights Reserved.
+    </div>
+
+  </footer>
+
+  <script src="../../Main.js"></script>
+
+</body>
+
+</html>

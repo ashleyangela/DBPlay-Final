@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+
+  <link rel="icon" type="image/png" href="PHOTOS/logo.png">
+</head>
+
+<body class="login-page">
+  <img src="PHOTOS/character.png" class="login-picture" alt="">
+
+  <!-- LOGIN -->
+  <div class="login-box">
+    <div class="login-logo">
+      <h1>
+        Welcome to
+        <img src="PHOTOS/db play.png" class="login-logo-img" alt="Logo">
+      </h1>
+      <p>Home of DonBelle Feels</p>
+    </div>
+
+    <div class="login-field">
+      <div class="login-icon">
+        <img src="PHOTOS/email.png" alt="Email">
+      </div>
+      <input type="email" placeholder="Email Address">
+    </div>
+
+    <a href="#" class="login-link"> Click here to use Mobile Number </a>
+
+    <div class="login-field">
+      <div class="login-icon">
+        <img src="PHOTOS/password.png" alt="Password">
+      </div>
+      <input type="password" placeholder="Password" autocomplete="current-password">
+    </div>
+
+    <a href="#" class="login-link"> Forgot Password? </a>
+
+    <button type="button" class="login-btn" onclick="window.location.href = 'homepage.html'">
+      Continue
+    </button>
+
+    <div class="login-or">Or</div>
+
+    <button type="button" class="login-social login-facebook">
+      <img src="PHOTOS/facebook.png" alt="Facebook">
+      Login with Facebook
+    </button>
+
+    <button type="button" class="login-social login-apple">
+      <img src="PHOTOS/apple.png" alt="Apple">
+      Login with Apple
+    </button>
+
+    <button type="button" class="login-social login-tv">
+      <img src="PHOTOS/tv.png" alt="TV Provider">
+      Login with TV Provider
+    </button>
+
+    <div class="login-bottom">
+      New here?
+      <a href="CreateAccount.html">Create Account</a>
+    </div>
+  </div>
+
+  <script src="Main.js"></script>
+</body>
+
+</html>

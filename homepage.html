@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | DB PLAY</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="PHOTOS/logo.png" />
+  </head>
+
+  <body>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <header class="glass-header">
+        <div class="nav-left">
+            <a href="homepage.html" class="logo-container"><img src="GENERAL_PHOTOS/LOGO.png" alt="DB PLAY Logo"
+                    class="site-logo" /></a>
+            <ul class="nav-links">
+                <li><a href="homepage.html" class="active-pill">HOME</a></li>
+                <li><a href="movies_or_series.html">Movie/Series</a></li>
+                <li><a href="watchlist.html">My Watchlist</a></li>
+                <li><a href="news.html">News &amp; Update</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form class="search-box" id="searchForm" role="search">
+                <input type="text" id="searchInput" placeholder="Search..." class="glass-input" aria-label="Search"
+                    autocomplete="off" /><i class="fa-solid fa-magnifying-glass search-icon" id="searchIcon"
+                    role="button" tabindex="0" aria-label="Search"></i>
+            </form>
+            <img src="GENERAL_PHOTOS/PROFILE-AVATAR.png" alt="User Profile" class="profile-avatar" />
+            <div class="profile-menu-container">
+                <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-haspopup="true" aria-expanded="false"
+                    aria-controls="menuPanel">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="profile-dropdown" id="menuPanel">
+                    <a href="about.html"><i class="fa-solid fa-circle-info"></i><span>About</span></a><a
+                        href="gallery.html"><i class="fa-regular fa-images"></i><span>Gallery</span></a><a
+                        href="contact.html"><i class="fa-regular fa-envelope"></i><span>Contact Us</span></a><a
+                        href="playlist.html"><i
+                            class="fa-solid fa-music"></i><span>Playlist</span></a><a href="login.html" id="signOut"><i
+                            class="fa-solid fa-right-from-bracket"></i><span>Sign Out</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section
+      class="hero-container"
+      style="background-image: url(&quot;PHOTOS/BIG-PHOTO.png&quot;)"
+    >
+      <video
+        class="hero-video"
+        id="heroVideo"
+        src="VIDEOS/CBML_REPEAT.mp4"
+        playsinline
+        preload="auto"
+      ></video>
+
+      <button class="hero-mute-btn" id="heroMuteBtn" title="Sound">
+        <i class="fa-solid fa-volume-high"></i>
+      </button>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <img
+          src="PHOTOS/CBML-LOGO.png"
+          alt="Can't Buy Me Love"
+          class="hero-title-img"
+        />
+
+        <div class="movie-tags">
+          <span>2023</span>
+          <span>Romance</span>
+          <span>Drama</span>
+          <span class="glass-badge">PG</span>
+          <span class="glass-badge">HD</span>
+        </div>
+
+        <div class="glass-box hero-description">
+          Caroline, a wealthy young woman, crosses paths with Bingo, a
+          hardworking man from a very different background. Their lives become
+          unexpectedly connected as they deal with family problems, secrets, and
+          complicated relationships. It combines romance, comedy, drama, and
+          mystery while following how their relationship develops.
+        </div>
+
+        <div class="hero-actions">
+          <button class="glass-btn btn-play" data-trailer="hero-play">
+            <i class="fa-solid fa-play"></i> PLAY
+          </button>
+
+          <button class="glass-btn btn-icon" title="Info">
+            <i class="fa-solid fa-circle-info"></i>
+          </button>
+
+          <button
+            class="glass-btn btn-icon btn-watchlist"
+            title="Add to Watchlist"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-bottom-slider">
+        <div class="glass-card hero-thumb-card" data-trailer="hero-poster-1">
+          <img src="PHOTOS/POSTER1.png" alt="Movie Poster 1" />
+        </div>
+
+        <div class="glass-card hero-thumb-card" data-trailer="hero-poster-2">
+          <img src="PHOTOS/POSTER2.png" alt="Movie Poster 2" />
+        </div>
+
+        <div class="glass-card hero-thumb-card" data-trailer="hero-poster-3">
+          <img src="PHOTOS/POSTER3.png" alt="Movie Poster 3" />
+        </div>
+
+        <div class="glass-card hero-thumb-card" data-trailer="hero-poster-4">
+          <img src="PHOTOS/POSTER4.png" alt="Movie Poster 4" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container">
+      <h2 class="section-title">Movie/Series</h2>
+
+      <div class="slider-wrapper">
+        <button
+          class="glass-nav-btn prev"
+          onclick="scrollSlider('movieSeriesRow', -500)"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <button
+          class="glass-nav-btn next"
+          onclick="scrollSlider('movieSeriesRow', 500)"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="cards-row" id="movieSeriesRow">
+          <div
+            class="glass-card featured-card"
+            data-trailer="movie-1"
+            style="background-image: url(&quot;PHOTOS/COVER1.png&quot;)"
+          >
+            <div class="glass-card-overlay">
+              <div class="card-left-content">
+                <img
+                  src="PHOTOS/LOGOCOVER1.png"
+                  alt="Title Graphic"
+                  class="featured-title-img"
+                />
+
+                <div class="movie-tags">
+                  <span>2021</span>
+                  <span>Romance</span>
+                  <span>Drama</span>
+                  <span class="glass-badge">PG</span>
+                  <span class="glass-badge">HD</span>
+                </div>
+
+                <p class="featured-description">
+                  Cisco and Cheska are a longtime couple whose dreams and
+                  ambitions slowly put them on different paths. They take one
+                  last trip together to decide whether to let go or fight for
+                  their love.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="glass-card featured-card"
+            data-trailer="movie-2"
+            style="background-image: url(&quot;PHOTOS/COVER2.png&quot;)"
+          >
+            <div class="glass-card-overlay">
+              <div class="card-left-content">
+                <img
+                  src="PHOTOS/LOGOCOVER2.png"
+                  alt="Title Graphic"
+                  class="featured-title-img"
+                />
+
+                <div class="movie-tags">
+                  <span>2026</span>
+                  <span>Romance</span>
+                  <span>Drama</span>
+                  <span class="glass-badge">PG</span>
+                  <span class="glass-badge">HD</span>
+                </div>
+
+                <p class="featured-description">
+                  Ino and Cara meet unexpectedly and slowly become closer
+                  despite their differences. As their friendship grows into
+                  love, they learn that true connection goes beyond appearances.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="glass-card featured-card"
+            data-trailer="movie-3"
+            style="background-image: url(&quot;PHOTOS/COVER3.png&quot;)"
+          >
+            <div class="glass-card-overlay">
+              <div class="card-left-content">
+                <img
+                  src="PHOTOS/LOGOCOVER3.png"
+                  alt="Title Graphic"
+                  class="featured-title-img"
+                />
+
+                <div class="movie-tags">
+                  <span>2023</span>
+                  <span>Romance</span>
+                  <span>Comedy</span>
+                  <span class="glass-badge">PG</span>
+                  <span class="glass-badge">HD</span>
+                </div>
+
+                <p class="featured-description">
+                  Max moves to a new school and immediately clashes with the
+                  popular and confident Deib. As they spend more time together,
+                  their rivalry slowly turns into friendship and unexpected
+                  love.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="glass-card featured-card"
+            data-trailer="movie-4"
+            style="background-image: url(&quot;PHOTOS/COVER4.png&quot;)"
+          >
+            <div class="glass-card-overlay">
+              <div class="card-left-content">
+                <img
+                  src="PHOTOS/LOGOCOVER4.png"
+                  alt="Title Graphic"
+                  class="featured-title-img"
+                />
+
+                <div class="movie-tags">
+                  <span>2022</span>
+                  <span>Romance</span>
+                  <span>Teens</span>
+                  <span class="glass-badge">PG</span>
+                  <span class="glass-badge">HD</span>
+                </div>
+
+                <p class="featured-description">
+                  Hannah and Ethan start a relationship with simple rules and no
+                  plans to fall in love. But as they grow closer, their feelings
+                  become real and harder to ignore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container">
+      <h2 class="section-title">Top 5 Movie/Series</h2>
+
+      <div class="slider-wrapper">
+        <button
+          class="glass-nav-btn prev"
+          onclick="scrollSlider('top5Row', -300)"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <button
+          class="glass-nav-btn next"
+          onclick="scrollSlider('top5Row', 300)"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="cards-row top5-row" id="top5Row">
+          <div class="top5-card" data-trailer="top-1">
+            <div class="top5-poster">
+              <img src="PHOTOS/TOP1.png" alt="Top 1 Poster" />
+            </div>
+            <img src="NUMBERS/NUMBER1.png" alt="Rank 1" class="rank-image" />
+          </div>
+
+          <div class="top5-card" data-trailer="top-2">
+            <div class="top5-poster">
+              <img src="PHOTOS/TOP2.png" alt="Top 2 Poster" />
+            </div>
+            <img src="NUMBERS/NUMBER2.png" alt="Rank 2" class="rank-image" />
+          </div>
+
+          <div class="top5-card" data-trailer="top-3">
+            <div class="top5-poster">
+              <img src="PHOTOS/TOP3.png" alt="Top 3 Poster" />
+            </div>
+            <img src="NUMBERS/NUMBER3.png" alt="Rank 3" class="rank-image" />
+          </div>
+
+          <div class="top5-card" data-trailer="top-4">
+            <div class="top5-poster">
+              <img src="PHOTOS/TOP4.png" alt="Top 4 Poster" />
+            </div>
+            <img src="NUMBERS/NUMBER4.png" alt="Rank 4" class="rank-image" />
+          </div>
+
+          <div class="top5-card" data-trailer="top-5">
+            <div class="top5-poster">
+              <img src="PHOTOS/TOP5.png" alt="Top 5 Poster" />
+            </div>
+            <img src="NUMBERS/NUMBER5.png" alt="Rank 5" class="rank-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="glass-footer">
+      <img src="PHOTOS/LOGOFOOTER.png" alt="DB PLAY Logo" class="footer-logo" />
+
+      <div class="footer-version">Version: 26.09.03-1</div>
+
+      <div class="footer-links">
+        <a href="#">Help and Support</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <div class="copyright">
+        Copyright © 2026 DB Play | All Rights Reserved.
+      </div>
+    </footer>
+
+    <div class="glass-modal" id="videoModal">
+      <div class="glass-modal-content">
+        <button class="modal-close" id="closeModal">&times;</button>
+
+        <h3 id="modalTitle">Now Playing</h3>
+
+        <div class="player-frame" id="playerFrame">
+          <div class="video-placeholder" id="videoPlayer"></div>
+
+          <button class="exit-fs-btn" id="exitFullscreenBtn">
+            <i class="fa-solid fa-compress"></i>
+            Back to Small
+          </button>
+        </div>
+
+        <div class="size-controls">
+          <button class="size-btn" id="fullscreenBtn">
+            <i class="fa-solid fa-expand"></i>
+            Full Screen
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="Main.js"></script>
+  </body>
+</html>

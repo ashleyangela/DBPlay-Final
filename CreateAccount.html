@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="icon" type="image/png" href="PHOTOS/logo.png">
+  </head>
+
+  <body class="signup-page">
+    <!-- LARGE TRANSPARENT IMAGE ON LEFT -->
+    <img src="PHOTOS/character.png" class="signup-picture" alt="">
+
+    <!-- SIGN UP -->
+    <div class="signup-box">
+      <!-- TITLE -->
+      <div class="signup-title">
+        <h1>Create an account</h1>
+      </div>
+
+      <!-- EMAIL -->
+      <div class="signup-field">
+        <div class="signup-icon">
+          <img src="PHOTOS/email.png" alt="Email">
+        </div>
+        <input type="email" placeholder="Email Address">
+      </div>
+
+      <!-- PASSWORD -->
+      <div class="signup-field">
+        <div class="signup-icon">
+          <img src="PHOTOS/password.png" alt="Password">
+        </div>
+        <input type="password" placeholder="Password">
+      </div>
+
+      <!-- CONFIRM PASSWORD -->
+      <div class="signup-field">
+        <div class="signup-icon">
+          <img src="PHOTOS/password.png" alt="Password">
+        </div>
+        <input type="password" placeholder="Confirm Password">
+      </div>
+
+      <!-- TERMS -->
+      <label class="signup-check">
+        <input type="checkbox">
+        <span>I agree to the Terms and Conditions and Privacy Policy.</span>
+      </label>
+
+      <!-- MARKETING -->
+      <label class="signup-check">
+        <input type="checkbox">
+        <span>
+          I agree to receive marketing communications
+          <br>
+          (until I unsubscribe).
+        </span>
+      </label>
+
+      <button
+        type="button"
+        class="signup-btn"
+        onclick="window.location.href = 'homepage.html'"
+      >
+        Continue
+      </button>
+
+      <!-- LOGIN -->
+      <div class="signup-login">
+        Already Have an Account?
+        <a href="index.html">Login</a>
+      </div>
+    </div>
+  </body>
+</html>
